@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Global start */
 body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* margin: 0 -.25em; */
+}
+
+div {
+    margin: -.5em;
 }
 
 img {
@@ -26,26 +30,43 @@ a {
     text-decoration:  none;
 }
 
+button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    outline-style: solid;
+    outline-color: #e5e7eb;
+    outline-width: 1px;
+    border-radius: 2%;
+}
+/* Global end */
+/* Header start */
 .header {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
-    margin: -.5em;
+    padding: 0.5em 10em 2em 10em;
 }
 
 .header-left {
+    display: inline-flex;
+    align-items: center;
     justify-content: space-between;
-    margin-left: 1em;
+    gap: 0.5em;
 }
 
 .header-right {
+    display: inline-flex;
+    align-items: center;
     justify-content: space-between;
-    margin-right: 1em;
     font-size: 18px;
 }
 
 .header-right a{
     color: #e5e7eb;
+}
+
+.header-right a :hover{
+    font-weight: 700px;
 }
 
 header {
@@ -59,9 +80,61 @@ header {
     height: 2em;
     width: 2em;
     border-radius: 50%;
-    margin: 0 0.5em;
+}
+/* Header end */
+/* Content start */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Row-1 start */
+.row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    background-color: #1f2937;
+    padding: 0.5em 10em;
 }
 
+.row-1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+    min-height: auto;
+    flex:auto;
+}
+
+.row-1-left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin: -0.5em 0;
+}
+
+.row-1-left p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.row-1-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: none;
+}
+
+/* Row-1 end */
+/* Row-2 start */
+.row-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content end */
+/* Footer start */
 .footer {
     display: flex;
     align-items: center;
@@ -71,3 +144,4 @@ header {
     flex-wrap: wrap;
     margin: 2em;
 }
+/* Footer end */
