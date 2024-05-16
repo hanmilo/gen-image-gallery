@@ -252,8 +252,8 @@ header {
     justify-content: center;
     background-color: #3882f6;
     border-radius: 8px;
-    padding: 0 5em;
-    gap: 1em;
+    padding: 0 2em;
+    gap: 2em;
     margin-top: 3em;
     margin-bottom: 3em;
 }
