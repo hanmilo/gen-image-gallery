@@ -166,6 +166,11 @@ header {
 .row-2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.row-2 h2 {
+    margin-bottom: 0;
 }
 
 .themes {
