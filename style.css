@@ -5,6 +5,7 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+
     justify-content: space-between;
     margin: 0em;
     padding: 0em;
@@ -19,6 +20,7 @@ img {
 }
 
 ul {
+    display: inline-flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -36,7 +38,7 @@ button {
     border-radius: 4px;
     border: 1px solid #e5e7eb;
     flex: auto;
-    width: 100px;
+    width: 120px;
     height: auto;
     padding: 0.25em;
     margin-top: 0.5em;
@@ -47,22 +49,27 @@ button:hover {
     font-weight: bolder;
 }
 
-.header,
-.row-1,
+.header-container,
+.row-1-container,
 .row-2,
-.row-3,
-.footer {
-    padding-left: 10em;
-    padding-right: 10em;
+.row-3-container,
+.row-4 {
+    width: 50em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 /* Global end */
 /* Header start */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1f2937;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
+}
+
+.header-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-left {
@@ -70,6 +77,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     gap: 0.5em;
+    flex: none;
 }
 
 .header-group {
@@ -85,7 +93,6 @@ button:hover {
 }
 
 .header-right {
-    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
@@ -117,24 +124,26 @@ header {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 /* Row-1 start */
 .row-1 {
     display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+}
+
+.row-1-container {
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    background-color: #1f2937;
 }
 
 .row-1-left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-width: 200px;
-    min-height: auto;
-    flex:auto;
+    flex: auto;
+    flex-wrap: wrap;
 }
 
 .row-1-left h1 {
@@ -155,35 +164,29 @@ header {
 }
 
 .row-1-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: none;
+    flex: auto;
 }
-
 /* Row-1 end */
 /* Row-2 start */
 .row-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    margin-bottom: 3em;
 }
 
 .row-2 h2 {
     margin-bottom: 0;
+    align-self: center;
 }
 
 .themes {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-self: center;
     flex: auto;
     gap: 1em;
-    justify-content: space-between;
     font-size: 18px;
     text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .themes a {
@@ -195,31 +198,64 @@ header {
 }
 
 .themes img {
-    max-width: 200px;
-    height: auto;
     flex: auto;
 }
 
 .theme-1,
 .theme-2,
-.theme-3 {
+.theme-3,
+.themes img {
     max-width: 200px;
 }
 /* Row-2 end */
 /* Row-3 start */
+.row-3 {
+    display: flex;
+    background-color: #e5e7eb;
+    justify-content: center;
+}
 
+.row-3-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+
+.row-3-container p {
+    text-align: left;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    margin: 0 2em;
+}
+
+.row-3-container h3 {
+    text-align: right;
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 4em;
+}
 /* Row-3 end */
 /* Content end */
 /* Row-4 start */
-.row-4{
+.row-4 {
     display: flex;
+    align-self: center;
+}
+
+.row-4-container {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #3882f6;
     border-radius: 8px;
-    margin: 5em 10em;
     padding: 0 5em;
     gap: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .row-4-left {
@@ -240,7 +276,11 @@ header {
 .footer {
     display: flex;
     background-color: #1f2937;
-    color: #e5e7eb;
     justify-content: center;
+}
+
+.footer-note {
+    justify-content: center;
+    color: #e5e7eb;
 }
 /* Footer end */
